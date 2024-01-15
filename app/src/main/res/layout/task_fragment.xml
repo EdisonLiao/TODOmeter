@@ -22,7 +22,7 @@
 
         <variable
             name="task"
-            type="com.sergiobelda.androidtodometer.domain.model.Task" />
+            type="com.toolutil.todomine.domain.model.Task" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

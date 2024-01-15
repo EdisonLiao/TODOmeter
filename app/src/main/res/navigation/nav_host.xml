@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/tasksFragment"
-        android:name="com.sergiobelda.androidtodometer.ui.task.TasksFragment"
+        android:name="com.toolutil.todomine.ui.task.TasksFragment"
         tools:layout="@layout/tasks_fragment">
         <action
             android:id="@+id/navToTask"
@@ -33,11 +33,11 @@
     </fragment>
     <dialog
         android:id="@+id/menuDialog"
-        android:name="com.sergiobelda.androidtodometer.ui.main.MenuBottomSheetDialogFragment"
+        android:name="com.toolutil.todomine.ui.main.MenuBottomSheetDialogFragment"
         tools:layout="@layout/menu_bottom_sheet_dialog_fragment" />
     <fragment
         android:id="@+id/taskFragment"
-        android:name="com.sergiobelda.androidtodometer.ui.task.TaskFragment"
+        android:name="com.toolutil.todomine.ui.task.TaskFragment"
         tools:layout="@layout/task_fragment">
         <argument
             android:name="taskId"
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/editTaskFragment"
-        android:name="com.sergiobelda.androidtodometer.ui.task.EditTaskFragment"
+        android:name="com.toolutil.todomine.ui.task.EditTaskFragment"
         android:label="@string/edit_task"
         tools:layout="@layout/edit_task_fragment">
         <argument
@@ -57,7 +57,7 @@
     </fragment>
     <fragment
         android:id="@+id/editProjectFragment"
-        android:name="com.sergiobelda.androidtodometer.ui.project.EditProjectFragment"
+        android:name="com.toolutil.todomine.ui.project.EditProjectFragment"
         android:label="@string/edit_project"
         tools:layout="@layout/edit_project_fragment">
         <argument
@@ -66,20 +66,20 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.sergiobelda.androidtodometer.ui.about.AboutFragment"
+        android:name="com.toolutil.todomine.ui.about.AboutFragment"
         tools:layout="@layout/about_fragment" />
     <fragment
         android:id="@+id/addTaskFragment"
-        android:name="com.sergiobelda.androidtodometer.ui.task.AddTaskFragment"
+        android:name="com.toolutil.todomine.ui.task.AddTaskFragment"
         android:label="@string/add_task"
         tools:layout="@layout/add_task_fragment" />
     <fragment
         android:id="@+id/addProjectFragment"
-        android:name="com.sergiobelda.androidtodometer.ui.project.AddProjectFragment"
+        android:name="com.toolutil.todomine.ui.project.AddProjectFragment"
         android:label="@string/add_project"
         tools:layout="@layout/add_project_fragment" />
     <dialog
         android:id="@+id/moreBottomSheetDialog"
-        android:name="com.sergiobelda.androidtodometer.ui.main.MoreBottomSheetDialogFragment"
+        android:name="com.toolutil.todomine.ui.main.MoreBottomSheetDialogFragment"
         tools:layout="@layout/more_bottom_sheet_dialog_fragment" />
 </navigation>

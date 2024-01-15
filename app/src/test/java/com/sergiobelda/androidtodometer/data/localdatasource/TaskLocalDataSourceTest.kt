@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.data.localdatasource
+package com.toolutil.todomine.data.localdatasource
 
-import com.sergiobelda.androidtodometer.data.database.dao.TaskDao
-import com.sergiobelda.androidtodometer.data.database.entity.TaskEntity
-import com.sergiobelda.androidtodometer.data.database.mapper.TaskMapper.toDomain
-import com.sergiobelda.androidtodometer.domain.model.Tag
-import com.sergiobelda.androidtodometer.domain.model.TaskState
+import com.toolutil.todomine.data.database.dao.TaskDao
+import com.toolutil.todomine.data.database.entity.TaskEntity
+import com.toolutil.todomine.data.database.mapper.TaskMapper.toDomain
+import com.toolutil.todomine.domain.model.Tag
+import com.toolutil.todomine.domain.model.TaskState
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK
 import io.mockk.mockk

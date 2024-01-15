@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.ui.util
+package com.toolutil.todomine.ui.util
 
-import com.sergiobelda.androidtodometer.domain.model.Tag
-import com.sergiobelda.androidtodometer.domain.model.Task
-import com.sergiobelda.androidtodometer.domain.model.TaskState
-import com.sergiobelda.androidtodometer.ui.util.ProgressUtil.getTasksDoneProgress
+import com.toolutil.todomine.domain.model.Tag
+import com.toolutil.todomine.domain.model.Task
+import com.toolutil.todomine.domain.model.TaskState
+import com.toolutil.todomine.ui.util.ProgressUtil.getTasksDoneProgress
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

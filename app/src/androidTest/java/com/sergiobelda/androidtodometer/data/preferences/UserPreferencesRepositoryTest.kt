@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.data.preferences
+package com.toolutil.todomine.data.preferences
 
 import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.sergiobelda.androidtodometer.data.repository.UserPreferencesRepository
-import com.sergiobelda.androidtodometer.domain.repository.IUserPreferencesRepository
+import com.toolutil.todomine.data.repository.UserPreferencesRepository
+import com.toolutil.todomine.domain.repository.IUserPreferencesRepository
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.runBlocking
 import org.junit.After

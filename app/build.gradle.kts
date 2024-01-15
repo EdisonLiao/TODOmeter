@@ -14,12 +14,12 @@ if (file("google-services.json").exists()) {
 }
 
 android {
-    namespace = "com.sergiobelda.androidtodometer"
+    namespace = "com.toolutil.todomine"
 
     compileSdk = libs.versions.androidCompileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.sergiobelda.androidtodometer"
+        applicationId = "com.toolutil.todomine"
         minSdk = libs.versions.androidMinSdk.get().toInt()
         targetSdk = libs.versions.androidTargetSdk.get().toInt()
         versionCode = 23

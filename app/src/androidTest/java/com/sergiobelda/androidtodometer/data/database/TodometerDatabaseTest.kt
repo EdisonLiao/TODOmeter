@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.data.database
+package com.toolutil.todomine.data.database
 
 import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule

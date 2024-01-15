@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name" translatable="false">ToDometer</string>
+    <string name="app_name" translatable="false">ToDoMine</string>
 
     <string name="tasks">Tareas</string>
     <string name="projects">Proyectos</string>

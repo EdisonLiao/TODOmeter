@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.util
+package com.toolutil.todomine.util
 
-import com.sergiobelda.androidtodometer.data.database.entity.ProjectEntity
-import com.sergiobelda.androidtodometer.data.database.entity.TaskEntity
-import com.sergiobelda.androidtodometer.domain.model.Tag
-import com.sergiobelda.androidtodometer.domain.model.TaskState
+import com.toolutil.todomine.data.database.entity.ProjectEntity
+import com.toolutil.todomine.data.database.entity.TaskEntity
+import com.toolutil.todomine.domain.model.Tag
+import com.toolutil.todomine.domain.model.TaskState
 
 object TestUtil {
 

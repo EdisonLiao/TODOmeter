@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.data.database.mapper
+package com.toolutil.todomine.data.database.mapper
 
-import com.sergiobelda.androidtodometer.data.database.entity.TaskEntity
-import com.sergiobelda.androidtodometer.data.database.mapper.TaskMapper.toDomain
-import com.sergiobelda.androidtodometer.data.database.mapper.TaskMapper.toEntity
-import com.sergiobelda.androidtodometer.domain.model.Tag
-import com.sergiobelda.androidtodometer.domain.model.Task
-import com.sergiobelda.androidtodometer.domain.model.TaskState
+import com.toolutil.todomine.data.database.entity.TaskEntity
+import com.toolutil.todomine.data.database.mapper.TaskMapper.toDomain
+import com.toolutil.todomine.data.database.mapper.TaskMapper.toEntity
+import com.toolutil.todomine.domain.model.Tag
+import com.toolutil.todomine.domain.model.Task
+import com.toolutil.todomine.domain.model.TaskState
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

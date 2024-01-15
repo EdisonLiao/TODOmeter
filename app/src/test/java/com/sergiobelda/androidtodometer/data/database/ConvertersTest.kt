@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.data.database
+package com.toolutil.todomine.data.database
 
-import com.sergiobelda.androidtodometer.domain.model.Tag
-import com.sergiobelda.androidtodometer.domain.model.TaskState
+import com.toolutil.todomine.domain.model.Tag
+import com.toolutil.todomine.domain.model.TaskState
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

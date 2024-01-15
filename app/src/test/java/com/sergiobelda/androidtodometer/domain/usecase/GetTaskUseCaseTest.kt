@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.domain.usecase
+package com.toolutil.todomine.domain.usecase
 
-import com.sergiobelda.androidtodometer.domain.model.Tag
-import com.sergiobelda.androidtodometer.domain.model.Task
-import com.sergiobelda.androidtodometer.domain.model.TaskState
-import com.sergiobelda.androidtodometer.domain.repository.ITaskRepository
+import com.toolutil.todomine.domain.model.Tag
+import com.toolutil.todomine.domain.model.Task
+import com.toolutil.todomine.domain.model.TaskState
+import com.toolutil.todomine.domain.repository.ITaskRepository
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK
 import io.mockk.mockk

@@ -20,11 +20,11 @@
 
     <data>
 
-        <import type="com.sergiobelda.androidtodometer.domain.model.TaskState" />
+        <import type="com.toolutil.todomine.domain.model.TaskState" />
 
         <variable
             name="task"
-            type="com.sergiobelda.androidtodometer.domain.model.Task" />
+            type="com.toolutil.todomine.domain.model.Task" />
     </data>
 
     <FrameLayout

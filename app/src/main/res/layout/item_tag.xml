@@ -11,7 +11,7 @@
 
         <variable
             name="tag"
-            type="com.sergiobelda.androidtodometer.domain.model.Tag" />
+            type="com.toolutil.todomine.domain.model.Tag" />
     </data>
 
     <FrameLayout

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.sergiobelda.androidtodometer.data.database
+package com.toolutil.todomine.data.database
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.sergiobelda.androidtodometer.data.database.dao.ProjectDao
-import com.sergiobelda.androidtodometer.data.database.dao.TaskDao
-import com.sergiobelda.androidtodometer.domain.model.TaskState
-import com.sergiobelda.androidtodometer.util.TestUtil
+import com.toolutil.todomine.data.database.dao.ProjectDao
+import com.toolutil.todomine.data.database.dao.TaskDao
+import com.toolutil.todomine.domain.model.TaskState
+import com.toolutil.todomine.util.TestUtil
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.runBlocking
 import org.hamcrest.CoreMatchers.`is`

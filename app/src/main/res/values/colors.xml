@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <color name="todometer_primary">#4285f4</color>
+    <color name="todometer_primary">#ffc107</color>
     <color name="todometer_primary_alpha">#4D4285F4</color>
     <color name="todometer_primary_dark">#0059c1</color>
     <color name="todometer_secondary">#3ddc84</color>
