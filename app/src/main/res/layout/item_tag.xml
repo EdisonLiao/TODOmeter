@@ -26,7 +26,6 @@
             android:layout_margin="12dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:contentDescription="@string/task_tag_color"
             android:focusable="true"
             android:src="@drawable/circle"
             app:tagColor="@{tag.resId}" />

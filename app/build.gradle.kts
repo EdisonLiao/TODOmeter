@@ -22,8 +22,8 @@ android {
         applicationId = "com.toolutil.todomine"
         minSdk = libs.versions.androidMinSdk.get().toInt()
         targetSdk = libs.versions.androidTargetSdk.get().toInt()
-        versionCode = 23
-        versionName = "1.4.1"
+        versionCode = 100
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,6 +34,16 @@ android {
     kotlin {
         jvmToolchain(17)
     }
+
+    signingConfigs {
+        create("release") {
+            storeFile = File("./todome.keystore")
+            storePassword = "12345678"
+            keyAlias = "todometer"
+            keyPassword = "12345678"
+        }
+    }
+
     buildTypes {
         getByName("release") {
             isShrinkResources = true
@@ -85,12 +95,8 @@ dependencies {
     implementation(libs.androidx.room.roomRuntime)
     ksp(libs.androidx.room.roomCompiler)
     implementation(libs.google.dagger.hiltAndroid)
-    implementation(platform(libs.google.firebase.firebaseBom))
-    implementation(libs.google.firebase.firebaseAnalyticsKtx)
-    implementation(libs.google.firebase.firebaseCrashlyticsKtx)
     kapt(libs.google.dagger.hiltAndroidCompiler)
     implementation(libs.google.material)
-    implementation(libs.google.playServicesOssLicenses)
     implementation(libs.timber)
     implementation(libs.companion)
 
@@ -99,8 +105,6 @@ dependencies {
     testImplementation(libs.google.dagger.hiltAndroidTesting)
     kaptTest(libs.google.dagger.hiltAndroidCompiler)
     testImplementation(libs.junit)
-    testImplementation(libs.mockk.mockk)
-    testImplementation(libs.robolectric.robolectric)
 
     androidTestImplementation(libs.androidx.arch.coreTesting)
     androidTestImplementation(libs.androidx.room.roomTesting)

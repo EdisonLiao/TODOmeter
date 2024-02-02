@@ -25,14 +25,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
-import com.toolutil.todomine.R
 import com.toolutil.todomine.databinding.AboutFragmentBinding
-import dev.sergiobelda.android.companion.content.launchActivity
-import dev.sergiobelda.android.companion.material.createMaterialDialog
-import dev.sergiobelda.android.companion.material.message
-import dev.sergiobelda.android.companion.material.positiveButton
-import dev.sergiobelda.android.companion.material.title
 
 /**
  * [Fragment] showing App information.
@@ -57,40 +50,6 @@ class AboutFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity?.packageName?.let {
-            val packageInfo = context?.packageManager?.getPackageInfo(it, 0)
-            val versionName = packageInfo?.versionName
-            binding.versionNumberTextView.text = versionName
-            if (versionName?.contains(getString(R.string.beta)) == true) {
-                binding.releaseChannelTextView.visibility = View.VISIBLE
-                binding.releaseChannelTextView.text = getString(R.string.beta)
-            }
-            if (versionName?.contains(getString(R.string.alpha)) == true) {
-                binding.releaseChannelTextView.visibility = View.VISIBLE
-                binding.releaseChannelTextView.text = getString(R.string.alpha)
-            }
-        }
-        binding.githubCard.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(getString(R.string.github_url))
-            startActivity(intent)
-        }
-        binding.openSourceLicensesCard.setOnClickListener {
-            context?.launchActivity<OssLicensesMenuActivity> {
-                putExtra("title", getString(R.string.open_source_licenses))
-            }
-        }
-        binding.privacyPolicyCard.setOnClickListener {
-            val htmlBody = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                Html.fromHtml(getString(R.string.privacy_policy_body), Html.FROM_HTML_MODE_COMPACT)
-            } else {
-                Html.fromHtml(getString(R.string.privacy_policy_body))
-            }
-            createMaterialDialog(requireContext()) {
-                title(R.string.privacy_policy)
-                message(htmlBody)
-                positiveButton(R.string.accept)
-            }.show()
-        }
+
     }
 }
